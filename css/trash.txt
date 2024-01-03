@@ -1,0 +1,360 @@
+PENDENTES:
+1. fazer as validações dos campos
+ . arrumar a cor do placeholder
+2. responsividade
+
+
+
+laranja - #F94616
+amarelo - #FCC200
+cinza - #545454
+preto - #000000
+
+
+
+#linksCliente{
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    width: fit-content;
+    top: 140px;
+    position: relative;
+    left: 350px;
+  }
+  
+  #linksCliente h1 {
+    margin: 0;
+    color: #fafafa;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    font-weight: 500;
+  }
+  
+  #linksCliente a {
+    text-decoration: none !important;
+    cursor: pointer;
+  }
+  
+  #linksCliente a:visited {
+    color: inherit;
+    text-decoration: none;
+  }
+
+
+
+
+
+  @font-face {
+    font-family: 'nunito';
+    src: url('../fonts/Nunito/Nunito-VariableFont_wght.ttf');
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('../img/bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    font-family: 'nunito';
+}
+
+#logoT {
+    position: fixed;
+    top: 70px;
+    right: 400px;
+    width: 200px;
+    height: auto;
+    max-width: 100%;
+}
+
+#linksRedes {
+    position: fixed;
+    top: 600px;
+    right: 170px;
+    width: 350px;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+}
+
+#linksCliente {
+    /*height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    width: fit-content;
+    top: 140px;
+    position: relative;
+    left: 350px;*/
+
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    width: fit-content;
+    position: fixed;
+    top: 140px;
+    left: 350px;
+}
+
+#linksCliente h1 {
+    margin: 0;
+    color: #fafafa;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    font-weight: 500;
+    position: relative;
+}
+
+#linksCliente h1::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 3px;
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+}
+
+#linksCliente h1:hover::after {
+    background-color: #fafafa;
+}
+
+#linksCliente a {
+    text-decoration: none !important;
+    cursor: pointer;
+}
+
+#linksCliente a:visited {
+    color: inherit;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 1300px) {
+    #linksCliente {
+        top: 140px;
+        right: 0px;
+        width: 100%;
+        max-width: none;
+        justify-content: left;
+    }
+
+    #linksCliente h1 {
+        margin: 0;
+        color: #fafafa;
+        margin-right: 0.5rem;
+        margin-left: 0.5rem;
+        font-weight: 450;
+        font-size: 27px;
+    }
+
+    #logoT {
+        position: fixed;
+        top: 70px;
+        right: 400px;
+        width: 100px;
+        height: auto;
+        max-width: 100%;
+    }
+
+    #linksRedes {
+        position: fixed;
+        top: 600px;
+        right: 120px;
+        width: 270px;
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 1180px) {
+    #linksCliente {
+        top: 140px;
+        margin-left: -60px;
+        width: 100%;
+        max-width: none;
+        justify-content: left;
+        position: absolute;
+    }
+
+    #linksCliente h1 {
+        margin: 0;
+        color: #fafafa;
+        margin-right: 0.5rem;
+        margin-left: 0.5rem;
+        font-weight: 450;
+        font-size: 27px;
+    }
+
+    #logoT {
+        position: fixed;
+        top: 70px;
+        right: 400px;
+        width: 100px;
+        height: auto;
+        max-width: 100%;
+    }
+
+    #linksRedes {
+        position: fixed;
+        top: 600px;
+        right: 120px;
+        width: 270px;
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 1180px) {
+    #linksCliente {
+        top: 140px;
+        margin-left: -60px;
+        width: 100%;
+        max-width: none;
+        justify-content: left;
+        position: absolute;
+    }
+
+    #linksCliente h1 {
+        margin: 0;
+        color: #fafafa;
+        margin-right: 0.5rem;
+        margin-left: 0.5rem;
+        font-weight: 450;
+        font-size: 27px;
+    }
+
+    #logoT {
+        position: fixed;
+        top: 70px;
+        right: 400px;
+        width: 100px;
+        height: auto;
+        max-width: 100%;
+    }
+
+    #linksRedes {
+        position: fixed;
+        top: 600px;
+        right: 120px;
+        width: 270px;
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 100%;
+    }
+}
+
+/* Estilos para tablets (768px de largura ou menos) */
+
+@media screen and (max-width: 785px) {
+    #logoT {
+        right: 10px;
+        width: 150px;
+    }
+
+    #linksRedes {
+        top: 300px;
+        right: 10px;
+        width: 100%;
+        max-width: none;
+        justify-content: center;
+    }
+
+    #linksCliente {
+        top: 140px;
+        margin-left: -340px;
+        width: 50%;
+        max-width: none;
+        justify-content: center;
+    }
+
+    #logoT {
+        position: fixed;
+        top: 70px;
+        left: 295px;
+        width: 200px;
+        height: 200px;
+        max-width: 80%;
+    }
+
+    #linksRedes {
+        position: fixed;
+        top: 600px;
+        right: 100px;
+        width: 250px;
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 60%;
+    }
+}
+
+@media screen and (min-width: 500px) {
+    body {
+        margin: 0;
+        padding: 0;
+        background-image: url('../img/bg500.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 100vh;
+        font-family: 'nunito';
+    }
+
+    #linksCliente {
+        top: 30px;
+        margin-left: -265px;
+        width: 80%;
+        max-width: none;
+        justify-content: left;
+        position: absolute;
+    }
+
+    #linksCliente h1 {
+        margin: 0;
+        color: #fafafa;
+        margin-right: 0.5rem;
+        margin-left: 0.5rem;
+        font-weight: 450;
+        font-size: 27px;
+    }
+
+    #logoT {
+        position: absolute;
+        top: 70px;
+        margin-right: 25px;
+        width: 60px;
+        height: auto;
+        max-width: 80%;
+    }
+
+    #linksRedes {
+        position: fixed;
+        top: 600px;
+        right: 120px;
+        width: 250px;
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 60%;
+    }
+}

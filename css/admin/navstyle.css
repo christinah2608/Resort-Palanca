@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.menu{
+    width: 100vw;
+    background-color: blanchedalmond;
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu ul{
+    list-style: none;
+    margin: 2%;
+
+}
+
+.menu li {
+}

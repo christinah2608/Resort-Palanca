@@ -1,0 +1,111 @@
+:root {
+    --fundo: #D8D8D8;
+    --branco: #FAFAFA;
+
+}
+
+@font-face {
+    font-family: 'nunito';
+    src: url('../../fonts/Nunito/Nunito-VariableFont_wght.ttf');
+}
+
+nav {
+    background-color: #FAFAFA !important;
+    color: black !important;
+    font-size: larger;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-family: 'nunito';
+    background-color: var(--fundo) !important;
+}
+
+#dashboard {
+    margin: 10px;
+}
+
+#boxes {
+    display: flex;
+    margin-top: -1rem;
+}
+
+h2 {
+    margin-left: 2rem;
+}
+
+.box {
+    margin: 2rem;
+    background-color: var(--branco);
+    width: 20rem;
+    height: 15rem;
+    align-items: center;
+    justify-content: center;
+    border-radius: 40px;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+
+#dashboard #boxes .box {
+    justify-content: center;
+    text-align: center;
+    padding-top: 4rem;
+
+}
+
+#dashboard #boxes .box h4 {
+    font-size: xx-large;
+    font-weight: 750;
+}
+
+#usersComments {
+    display: flex;
+}
+
+.bi-person-circle {
+    margin-top: 10px;
+    margin-left: 10px;
+    height: 90px;
+    width: 90px;
+}
+
+#usersComments h4 {
+    margin-left: 150px;
+    margin-top: -70px;
+    width: fit-content;
+}
+
+#usersComments .box p {
+    width: 16rem;
+    height: 6rem;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    text-align: justify;
+    overflow: scroll;
+    text-overflow: ellipsis;
+
+}
+
+#usersComments .box p::-webkit-scrollbar {
+    width: 8px;
+}
+
+#usersComments .box p::-webkit-scrollbar-thumb {
+    background-color: transparent;
+}
+
+#usersComments .box p {
+    scrollbar-width: thin;
+    scrollbar-color: transparent transparent;
+}
+
+.classif {
+    display: flex;
+    margin-left: 150px;
+    width: fit-content;
+}
